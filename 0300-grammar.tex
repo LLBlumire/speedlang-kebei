@@ -1,0 +1,125 @@
+\chapter{Grammar}
+
+There are 3 grammatical categories in \langname{}. These are Nouns, Verbs, and Adwords (properties that can be held by a verb or a noun).
+
+\section{Nouns}
+
+\subsection{Plural / Dual}
+
+Plurality and Duality are marked by rhotacisation of vowels. If a word is singular it takes no rhotacisation on it's vowels, if it is dual then the final vowel on the word stem is rhotacised. If it is plural then the first vowel on the word stem is rhotacised. One syllable words show only singular/plural distinction, if a vowel is a diphthong no distinction is made there.
+
+\begin{itemize}[label={}]
+    \item \orth{\sU{}e} \broad{\xC\xE} ``Adult Man of Caste 4''
+    \item \orth{\sU{}ee} \broad{\xC\eR} ``Adult Men of Caste 4''
+    \item \orth{dux'usu} \broad{dux\gs{}usu} ``One Flatbread''
+    \item \orth{dux'usue} \broad{dux\gs{}us\uR{}} ``Two Flatbreads''
+    \item \orth{duex'usu} \broad{d\uR{}x\gs{}usu} ``Many Flatbreads''
+\end{itemize}
+
+\subsection{Semantic Roles}
+
+Verbs use tones to make for valency, the valency of the sentence determines the tone patterns available to mark for varying semantic roles.
+
+Topicalisation is done by backing the topic of a sentence.
+
+\subsubsection{Intransitive / Monovalent}
+
+Words do not explicitly use tone in monovalent sentences. The subject is marked only by neutral (default) tone.
+
+\subsubsection{Transitive / Divalent}
+
+Divalent clauses take a agent and a patient. The agent is marked with high tone and the patient with neutral tone, this tone is applied to only the first syllable of multi-syllable words.
+
+\subsubsection{Ditransitive / Trivalent}
+
+Trivalent clauses have an agent who acts in the sentence, a patient that is acted upon, and a target that is acted towards.
+
+The agent is marked with a high tone on the final syllable, a patient is marked with a high tone on the first syllable, and the target is unmarked. In the event that there are not enough syllables on a word to provide adequate distinction, a marker appended to the word based on the role. For agent it is \orth{'ux} \broad{\gs{}ux}, for patient it is \orth{su} \broad{su}.
+
+E.g.
+
+
+\enumsentence{\shortex{4}
+    {n\eO{}\iO{}son\eD{}x=\tU{}oi & qog\uD{} & d\uD{}x'usu & keneu }
+    {3V\bs{}give=SUPC>INFC & SUB\bs{}SG\bs{}3.LLC & AGN\bs{}SG\bs{}flatbread & TAR\bs{}SG\bs{}3.LIC }
+    {`They (Lesser Legal Caste) gave some flatbread to them (Lesser Illegal Caste)'}
+}
+
+
+\subsection{Pronouns}
+
+Pronouns are determined by caste. They fall into 8 main groups. A special pronoun that is used to refer to caste 0 individuals, a special pronoun that is used to refer to caste 7 individuals and non human entities, and 6 pronouns that are determined by relative caste, seperated by lesser, equal, greater, and by the legality of any childreny ou could have.
+
+\begin{table}[H]
+\centering
+\caption{Pronoun Table}
+\label{tab:pronoun}
+\begin{tabu}{r|cccccccc}
+  & \multirow{2}{*}{Caste 0} & \multicolumn{2}{c}{Greater} & \multicolumn{2}{c}{Equal} & \multicolumn{2}{c}{Lesser}    & \multirow{2}{*}{Caste 7 / Non Human} \\
+  &                          & Legal          & Illegal    & Legal         & Illegal   & Legal               & Illegal &                                      \\\hline
+1 & kofku                    & xi             & xe         & poudo         & 'e        & \nU{}oif\sU{}ef & hehmei  & beis                                 \\
+2 & houqeu                   & be\dU{}eif   & sou        & ti            & 'uhou     & 'e'euf              & 'ehfeu  & gi                                   \\
+3 & boipi                    & 'i             & \tU{}eu  & \tU{}euni   & \dU{}e  & qogu                & keneu   & neu                                 
+\end{tabu}
+\end{table}
+
+\subsection{Noun Phrase Construction}
+
+Noun phrases are right branching appending information to nouns. There are a number of words that can be used as a part of this. Largely involves some form of dependency where one noun depends upon another noun with a relationship. The most trivial of these is possession ``i.e. my flatbread'' can be analysed as ``flatbread of mine''. This is done with the word \orth{qe}. i.e.
+
+\enumsentence{\shortex{5}
+    {n\eO{}\iO{}sonex=\tU{}oi & p\oO{}\uO{}do & dux'usu & qe & 'ehfeu}
+    {2V\bs{}have=SUPC>INFC & AGN\bs{}SG\bs{}1.ELC & PAT\bs{}SG\bs{}flatbread & of & SG\bs{}2.LIC}
+    {I (Equal Legal Caste) have your (Lesser Illegal Caste) flatbread}
+}
+
+Another word used in noun phrase construction is \orth{tu} ``and''. Marking both the noun phrase to it's left and the noun phrase to it's right as filling an equal role in the sentence. Both should be marked tonally as the same semantic role.
+
+\section{Verbs}
+
+\subsection{Valency}
+
+Verbs use tone to mark valency. The following rules are used for the number of the valency
+
+\begin{enumerate}[start=0]
+    \item No tone marking
+    \item Final syllable high tone, append \orth{go} if not enough syllables
+    \item First syllable high tone, append \orth{he} if not enough syllables
+    \item First and Last syllable high tone, append \orth{me} if not enough syllables
+\end{enumerate}
+
+\subsection{Polypersonal Agreement}
+
+Verbs mark polypersonal agreement. This is done through agglutination of the following parts.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c c c}
+                    &   Superior    &   Inferior    &   Non Human   \\\hline
+        Superior    &   \dU{}o      &   \tU{}oi     &   xous        \\
+        Inferior    &   hoif        &   tei         &   peu         \\
+        Non Human   &   toi         &   'uh         &   te          \\
+    \end{tabular}
+    \caption{Polypersonal Agreement, Source on Left, Target on Top}
+    \label{tab:polyag}
+\end{table}
+
+\subsubsection{Derivational Morphology}
+
+The \orth{go} prefix denotes the undoing of an action. i.e. \orth{ken\eO{}\uO{}\dU{}o} ``I go'' vs \orth{goken\eO{}\uO{}\dU{}o} ``I return''.
+
+
+\section{Temporal Constructions}
+
+Temporal constructions are placed before the verb in a sentence. The default unmarked temporal construction is the present imperfective. There are no specific words for tense, however a time or date or relative construction (last week) can be given followed by an aspect marker (imperfective, perfective, prospective, retrospective, completive, inceptive, progressive, punctual).
+
+\begin{itemize}[label={}]
+    \item imperfective --- \nullset{}
+    \item perfective --- xeu
+    \item prospective --- kuxqoi
+    \item retrospective --- \dU{}pei
+    \item completive --- soi
+    \item inceptive --- \tU{}oi
+    \item progressive --- mo\sU{}peudo
+    \item punction --- doideinoi
+\end{itemize}
