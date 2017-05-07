@@ -1,0 +1,42 @@
+#diagram {
+  display: flex;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 5em;
+  flex-direction: column;
+  marign: 0;
+  padding: 0;
+  width: 375px;
+  height: 375px;
+}
+#diagram .layer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+#diagram .layer .entry {
+  width: 100%;
+  padding: 0.2em;
+  text-align: center;
+  color: #fff;
+}
+#diagram .layer .entry#s {
+  background-color: #f44336;
+}
+#diagram .layer .entry#a {
+  background-color: #4caf50;
+}
+#diagram .layer .entry#p {
+  background-color: #f44336;
+}
+#diagram .layer .entry#d {
+  background-color: #4caf50;
+}
+#diagram .layer .entry#t {
+  background-color: #2196f3;
+}
+#diagram .layer .entry#r {
+  background-color: #f44336;
+}

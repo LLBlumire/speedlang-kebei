@@ -1,22 +1,26 @@
 \definecolor{blue}{HTML}{2196f3}
+\newcommand{\circled}[1]{
+    \tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}
+}
+\newcommand{\gl}[1]{\textsc{#1}}
 
 \newcommand{\orth}[1]{\textless{}#1\textgreater{}}
 \newcommand{\broad}[1]{/#1/}
 \newcommand{\narrow}[1]{[#1]}
 \newcommand{\langname}[0]{Kebei}
 
-\newcommand{\Ejective}[0]{ʼ}
+\newcommand{\Ejective}[0]{\symbol{"02BC}}
 \newcommand{\pE}[0]{p\Ejective{}}
 \newcommand{\tE}[0]{t\Ejective{}}
 \newcommand{\cE}[0]{c\Ejective{}}
 \newcommand{\kE}[0]{k\Ejective{}}
 
-\newcommand{\xJ}[0]{ɲ}
-\newcommand{\gs}[0]{ʔ}
-\newcommand{\xC}[0]{ç}
-\newcommand{\xN}[0]{ŋ}
-\newcommand{\xO}[0]{ɔ}
-\newcommand{\xE}[0]{ɛ}
+\newcommand{\xJ}[0]{\symbol{"0272}}
+\newcommand{\gs}[0]{\symbol{"0294}}
+\newcommand{\xC}[0]{\symbol{"00E7}}
+\newcommand{\xN}[0]{\symbol{"014B}}
+\newcommand{\xO}[0]{\symbol{"0254}}
+\newcommand{\xE}[0]{\symbol{"025B}}
 
 \newcommand{\Rhotic}[0]{\symbol{"02DE}}
 \newcommand{\iR}[0]{i\Rhotic{}}
@@ -54,12 +58,36 @@
 
 \newcommand{\nullset}[0]{\symbol{"2205}}
 
+\newcommand{\HI}[0]{\symbol{"0301}}
+
+\newcommand{\cS}{\circled{S}}
+\newcommand{\cA}{\circled{A}}
+\newcommand{\cP}{\circled{P}}
+\newcommand{\cD}{\circled{D}}
+\newcommand{\cR}{\circled{R}}
+\newcommand{\cT}{\circled{T}}
+
 \newenvironment{dictletter}[1]{
     \section{#1}
-    \newcommand{\dictentry}[3]{\textcolor{blue}{##1} (\emph{##2}) : ##3\\}
-}{
-    
-}
+    \newcommand{\dictentry}[3]{
+        \noindent\begin{tabu}{rX}
+            \textcolor{blue}{##1} \emph{(##2.)} & ##3
+        \end{tabu}
+    }
+    \makeatletter
+    \newcommand{\verbtable}[3]{
+        \makecell[tl]{
+            \def\temp{##1}\ifx\temp\empty\else
+            1 : ##1 \\\fi
+            \def\temp{##2}\ifx\temp\empty\else
+            2 : ##2 \\\fi
+            \def\temp{##3}\ifx\temp\empty\else
+            3 : ##3 \fi
+        }
+    }
+    \makeatother
+}{}
+
 
 \title{\langname}
 \author{L. L. Blumire}

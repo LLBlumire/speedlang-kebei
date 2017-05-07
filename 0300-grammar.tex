@@ -1,54 +1,44 @@
 \chapter{Grammar}
 
-There are 3 grammatical categories in \langname{}. These are Nouns, Verbs, and Adwords (properties that can be held by a verb or a noun).
+There are 2 grammatical categories in \langname{}. These are Nouns and Verbs; Adwords (Adjectives, Adverbs) behave as verbs.
 
 \section{Nouns}
 
 \subsection{Plural / Dual}
 
-Plurality and Duality are marked by rhotacisation of vowels. If a word is singular it takes no rhotacisation on it's vowels, if it is dual then the final vowel on the word stem is rhotacised. If it is plural then the first vowel on the word stem is rhotacised. One syllable words show only singular/plural distinction, if a vowel is a diphthong no distinction is made there.
+Plurality and Duality are marked by rhotacisation of vowels. If a word is singular it takes no rhotacisation on it's vowels, if it is dual then the final vowel on the word stem is rhotacised. If it is plural then the initial vowel on the word stem is rhotacised. One syllable words show only singular/plural distinction, if a vowel is a diphthong no distinction is made.
 
 \begin{itemize}[label={}]
-    \item \orth{\sU{}e} \broad{\xC\xE} ``Adult Man of Caste 4''
-    \item \orth{\sU{}ee} \broad{\xC\eR} ``Adult Men of Caste 4''
+    \item \orth{\sU{}e} \broad{\xC\xE} ``Adult Man''
+    \item \orth{\sU{}ee} \broad{\xC\eR} ``Adult Men''
     \item \orth{dux'usu} \broad{dux\gs{}usu} ``One Flatbread''
     \item \orth{dux'usue} \broad{dux\gs{}us\uR{}} ``Two Flatbreads''
     \item \orth{duex'usu} \broad{d\uR{}x\gs{}usu} ``Many Flatbreads''
 \end{itemize}
 
+There are a number of irregularities to this pattern howerver, for example the word \orth{guhoi} means `Stars' plural and not \orth{guehoi} and it's singular form is \orth{peufif} `Start; Point'.
+
 \subsection{Semantic Roles}
 
 Verbs use tones to make for valency, the valency of the sentence determines the tone patterns available to mark for varying semantic roles.
 
+The general morphosyntactic alignment of \langname{} is ergative-absolutive-secundative. This is graphically shown in Figure \ref{fig:ergabssec} where Red is a low tone, green is a high initial tone, and blue is a high final tone.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/erg-abs-sec}
+    \caption{Ergative-Absolutive-Secundative Alignment}
+    \label{fig:ergabssec}
+\end{figure}
+
+For monosylabic words in trivalent sentences, \orth{'ux} is appended if the word is an agent, and \orth{su} is appended if the word is a patient.
+
 Topicalisation is done by backing the topic of a sentence.
-
-\subsubsection{Intransitive / Monovalent}
-
-Words do not explicitly use tone in monovalent sentences. The subject is marked only by neutral (default) tone.
-
-\subsubsection{Transitive / Divalent}
-
-Divalent clauses take a agent and a patient. The agent is marked with high tone and the patient with neutral tone, this tone is applied to only the first syllable of multi-syllable words.
-
-\subsubsection{Ditransitive / Trivalent}
-
-Trivalent clauses have an agent who acts in the sentence, a patient that is acted upon, and a target that is acted towards.
-
-The agent is marked with a high tone on the final syllable, a patient is marked with a high tone on the first syllable, and the target is unmarked. In the event that there are not enough syllables on a word to provide adequate distinction, a marker appended to the word based on the role. For agent it is \orth{'ux} \broad{\gs{}ux}, for patient it is \orth{su} \broad{su}.
-
-E.g.
-
-
-\enumsentence{\shortex{4}
-    {n\eO{}\iO{}son\eD{}x=\tU{}oi & qog\uD{} & d\uD{}x'usu & keneu }
-    {3V\bs{}give=SUPC>INFC & SUB\bs{}SG\bs{}3.LLC & AGN\bs{}SG\bs{}flatbread & TAR\bs{}SG\bs{}3.LIC }
-    {`They (Lesser Legal Caste) gave some flatbread to them (Lesser Illegal Caste)'}
-}
 
 
 \subsection{Pronouns}
 
-Pronouns are determined by caste. They fall into 8 main groups. A special pronoun that is used to refer to caste 0 individuals, a special pronoun that is used to refer to caste 7 individuals and non human entities, and 6 pronouns that are determined by relative caste, seperated by lesser, equal, greater, and by the legality of any childreny ou could have.
+Pronouns are determined by caste. They fall into 8 main groups. A special pronoun that is used to refer to caste 0 individuals, a special pronoun that is used to refer to caste 7 individuals and non human entities, and 6 pronouns that are determined by relative caste, separated by lesser, equal, greater, and by the legality of any children you could have.
 
 \begin{table}[H]
 \centering
@@ -67,13 +57,39 @@ Pronouns are determined by caste. They fall into 8 main groups. A special pronou
 
 Noun phrases are right branching appending information to nouns. There are a number of words that can be used as a part of this. Largely involves some form of dependency where one noun depends upon another noun with a relationship. The most trivial of these is possession ``i.e. my flatbread'' can be analysed as ``flatbread of mine''. This is done with the word \orth{qe}. i.e.
 
-\enumsentence{\shortex{5}
-    {n\eO{}\iO{}sonex=\tU{}oi & p\oO{}\uO{}do & dux'usu & qe & 'ehfeu}
-    {2V\bs{}have=SUPC>INFC & AGN\bs{}SG\bs{}1.ELC & PAT\bs{}SG\bs{}flatbread & of & SG\bs{}2.LIC}
-    {I (Equal Legal Caste) have your (Lesser Illegal Caste) flatbread}
-}
-
 Another word used in noun phrase construction is \orth{tu} ``and''. Marking both the noun phrase to it's left and the noun phrase to it's right as filling an equal role in the sentence. Both should be marked tonally as the same semantic role.
+
+To assign number to a noun, the word \orth{pu} ``count'' is used followed by a number. Numbers are base 8 and numbers above multiples of $10_8$ are written by placing the multiple before the word, this continues for higher exponents. i.e. $3 700 106_8$ is \orth{xei-fiqeu-bi-xefmei-poife-gi}.
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{r | l}
+        0 & gei \\
+        1 & \nU{}of \\
+        2 & dogo \\
+        3 & xei \\
+        4 & pouse \\
+        5 & tihno \\
+        6 & gi \\
+        7 & bi \\
+        10 & mei \\
+        100 & poife \\
+        1000 & difeix \\
+        10000 & \tU{}eido\sU{} \\
+        100000 & xefmei \\
+        1000000 & fiqeu
+    \end{tabular}    
+    \label{tab:number}
+    \caption{Number System}
+\end{table}
+
+i.e. `6 men' is  \orth{\sU{}e pu gi\sU{}o}. You can also use the word \orth{meih} to mean `all' with \orth{pu}
+
+Different parts of an object are specified with \orth{peu} ``location''. For example ``Tabletop'' \orth{\nU{}egei peu pes}.
+
+If additional information is being provided about a noun, such as defining it or giving a description, then the word \orth{nu} ``info'' is used.
+
 
 \section{Verbs}
 
@@ -81,11 +97,10 @@ Another word used in noun phrase construction is \orth{tu} ``and''. Marking both
 
 Verbs use tone to mark valency. The following rules are used for the number of the valency
 
-\begin{enumerate}[start=0]
-    \item No tone marking
+\begin{enumerate}
     \item Final syllable high tone, append \orth{go} if not enough syllables
-    \item First syllable high tone, append \orth{he} if not enough syllables
-    \item First and Last syllable high tone, append \orth{me} if not enough syllables
+    \item Initial syllable high tone, append \orth{he} if not enough syllables
+    \item Intial and Final syllable high tone, append \orth{me} if not enough syllables
 \end{enumerate}
 
 \subsection{Polypersonal Agreement}
@@ -117,9 +132,9 @@ Temporal constructions are placed before the verb in a sentence. The default unm
     \item imperfective --- \nullset{}
     \item perfective --- xeu
     \item prospective --- kuxqoi
-    \item retrospective --- \dU{}pei
+    \item retrospective --- \dU{}ei
     \item completive --- soi
     \item inceptive --- \tU{}oi
     \item progressive --- mo\sU{}peudo
-    \item punction --- doideinoi
+    \item punctual --- doideinoi
 \end{itemize}
